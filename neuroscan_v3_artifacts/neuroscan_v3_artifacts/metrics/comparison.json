@@ -1,0 +1,148 @@
+{
+  "arms": {
+    "full_image": {
+      "accuracy": 0.985929648241206,
+      "balanced_accuracy": 0.9871361157854915,
+      "macro_f1": 0.9862266027235982,
+      "macro_precision": 0.9854809010699112,
+      "macro_recall": 0.9871361157854915,
+      "weighted_f1": 0.9859088134097971,
+      "cohen_kappa": 0.9807871079149392,
+      "per_class_recall": {
+        "glioma": 0.9683794466403162,
+        "meningioma": 0.9834983498349835,
+        "no_tumor": 1.0,
+        "pituitary": 0.9966666666666667
+      },
+      "per_class_f1": {
+        "glioma": 0.9819639278557114,
+        "meningioma": 0.9802631578947368,
+        "no_tumor": 0.9893238434163701,
+        "pituitary": 0.9933554817275747
+      },
+      "roc_auc": {
+        "glioma": 0.9995845008150176,
+        "meningioma": 0.9987122989755624,
+        "no_tumor": 0.9999915955086398,
+        "pituitary": 0.9999328537170263
+      },
+      "macro_auc": 0.9995553122540615
+    },
+    "roi_guided": {
+      "accuracy": 0.9748743718592965,
+      "balanced_accuracy": 0.9760637459585808,
+      "macro_f1": 0.9756202724564695,
+      "macro_precision": 0.9752170069145772,
+      "macro_recall": 0.9760637459585808,
+      "weighted_f1": 0.9748966849809583,
+      "cohen_kappa": 0.9656914534134763,
+      "per_class_recall": {
+        "glioma": 0.9683794466403162,
+        "meningioma": 0.9735973597359736,
+        "no_tumor": 0.9856115107913669,
+        "pituitary": 0.9766666666666667
+      },
+      "per_class_f1": {
+        "glioma": 0.9683794466403162,
+        "meningioma": 0.9688013136288999,
+        "no_tumor": 0.982078853046595,
+        "pituitary": 0.9832214765100671
+      },
+      "roc_auc": {
+        "glioma": 0.9918125352907963,
+        "meningioma": 0.9949111963219444,
+        "no_tumor": 0.9992520002689437,
+        "pituitary": 0.997956834532374
+      },
+      "macro_auc": 0.9959831416035146
+    }
+  },
+  "stages": {
+    "full_image": [
+      {
+        "stage": "A",
+        "best_epoch": 15,
+        "best_val_macro_f1": 0.9311324584510104,
+        "unfrozen_modules": 0,
+        "trainable_params": 329476,
+        "total_params": 4337024
+      },
+      {
+        "stage": "B",
+        "best_epoch": 31,
+        "best_val_macro_f1": 0.9810684939368528,
+        "requested_modules": 20,
+        "unfrozen_modules": 20,
+        "trainable_params": 2978756,
+        "total_params": 4337024
+      },
+      {
+        "stage": "C",
+        "best_epoch": 49,
+        "best_val_macro_f1": 0.9946979667794688,
+        "requested_modules": 50,
+        "unfrozen_modules": 50,
+        "trainable_params": 4157780,
+        "total_params": 4337024
+      }
+    ],
+    "roi_guided": [
+      {
+        "stage": "A",
+        "best_epoch": 15,
+        "best_val_macro_f1": 0.8917198617833912,
+        "unfrozen_modules": 0,
+        "trainable_params": 329476,
+        "total_params": 4337024
+      },
+      {
+        "stage": "B",
+        "best_epoch": 31,
+        "best_val_macro_f1": 0.9617785904829095,
+        "requested_modules": 20,
+        "unfrozen_modules": 20,
+        "trainable_params": 2978756,
+        "total_params": 4337024
+      },
+      {
+        "stage": "C",
+        "best_epoch": 51,
+        "best_val_macro_f1": 0.9786869261764464,
+        "requested_modules": 50,
+        "unfrozen_modules": 50,
+        "trainable_params": 4157780,
+        "total_params": 4337024
+      }
+    ]
+  },
+  "mcnemar": {
+    "a_only_correct": 18,
+    "b_only_correct": 7,
+    "discordant": 25,
+    "p_value": 0.043285250663757324
+  },
+  "selected_arm": "full_image",
+  "test_n": 995,
+  "segmentation": {
+    "best_epoch": 59,
+    "val_dice": 0.8493369407551263,
+    "val_iou": 0.7883919336462534,
+    "test_dice": 0.8399783844324812,
+    "test_iou": 0.7756296182996664,
+    "test_loss": 0.10500846242943976,
+    "mask_supervision": "annotated",
+    "params": 7982565
+  },
+  "roi": {
+    "total": 5950,
+    "fallbacks": 1800,
+    "fallback_rate": 0.3025210084033613
+  },
+  "dedup": {
+    "scanned": 6000,
+    "duplicate": 50,
+    "unreadable": 0,
+    "cross_split_duplicate": 9,
+    "kept": 5950
+  }
+}

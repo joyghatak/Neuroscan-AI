@@ -1,0 +1,18 @@
+# NeuroScan AI v3.0 — Python dependencies
+# =========================================
+# NOTE: PyTorch and torchvision are NOT pinned here because the user's
+# environment may already contain an appropriate CUDA-enabled build.
+# If you need to install PyTorch from scratch, visit: https://pytorch.org/get-started/locally/
+
+streamlit>=1.35.0
+torch>=2.0.0
+torchvision>=0.15.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+Pillow>=10.0.0
+matplotlib>=3.7.0
+scikit-learn>=1.3.0
+reportlab>=4.0.0
+pandas>=2.0.0
+tqdm>=4.65.0
+plotly>=5.15.0

@@ -1,0 +1,135 @@
+{
+  "generated": "2026-09-13T09:38:58",
+  "files": [
+    {
+      "path": "artifacts/README.md",
+      "description": "Generated README describing this run",
+      "bytes": 4069
+    },
+    {
+      "path": "artifacts/checkpoints/classifier_full_image.pt",
+      "description": "Final classifier for arm 'full_image'",
+      "bytes": 17663815
+    },
+    {
+      "path": "artifacts/checkpoints/classifier_roi_guided.pt",
+      "description": "Final classifier for arm 'roi_guided'",
+      "bytes": 17663815
+    },
+    {
+      "path": "artifacts/checkpoints/full_image_stageA.pt",
+      "description": "Arm 'full_image' stage A best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/full_image_stageB.pt",
+      "description": "Arm 'full_image' stage B best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/full_image_stageC.pt",
+      "description": "Arm 'full_image' stage C best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/roi_guided_stageA.pt",
+      "description": "Arm 'roi_guided' stage A best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/roi_guided_stageB.pt",
+      "description": "Arm 'roi_guided' stage B best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/roi_guided_stageC.pt",
+      "description": "Arm 'roi_guided' stage C best weights",
+      "bytes": 17660979
+    },
+    {
+      "path": "artifacts/checkpoints/segmenter.pt",
+      "description": "Attention U-Net, best val Dice",
+      "bytes": 32014155
+    },
+    {
+      "path": "artifacts/figures/arm_comparison.png",
+      "description": "Controlled arm comparison",
+      "bytes": 59218
+    },
+    {
+      "path": "artifacts/figures/arm_curves.png",
+      "description": "Per-arm validation curves with stage boundaries",
+      "bytes": 125739
+    },
+    {
+      "path": "artifacts/figures/segmentation_curves.png",
+      "description": "Attention U-Net training curves",
+      "bytes": 122603
+    },
+    {
+      "path": "artifacts/figures/test_panels.png",
+      "description": "Confusion matrices and ROC on the held-out test set",
+      "bytes": 146896
+    },
+    {
+      "path": "artifacts/metrics/comparison.json",
+      "description": "Arm comparison and significance test",
+      "bytes": 4052
+    },
+    {
+      "path": "artifacts/metrics/roi_boxes.json",
+      "description": "Cached ROI bounding boxes (one per image)",
+      "bytes": 1087407
+    },
+    {
+      "path": "artifacts/metrics/run_summary.json",
+      "description": "Complete machine-readable run summary",
+      "bytes": 7792
+    },
+    {
+      "path": "artifacts/metrics/segmentation.json",
+      "description": "Segmentation history and test metrics",
+      "bytes": 11356
+    },
+    {
+      "path": "artifacts/reports/report_glioma.pdf",
+      "description": "Clinical PDF report \u2014 glioma",
+      "bytes": 5891
+    },
+    {
+      "path": "artifacts/reports/report_meningioma.pdf",
+      "description": "Clinical PDF report \u2014 meningioma",
+      "bytes": 5684
+    },
+    {
+      "path": "artifacts/reports/report_no_tumor.pdf",
+      "description": "Clinical PDF report \u2014 no_tumor",
+      "bytes": 4862
+    },
+    {
+      "path": "artifacts/reports/report_pituitary.pdf",
+      "description": "Clinical PDF report \u2014 pituitary",
+      "bytes": 5633
+    },
+    {
+      "path": "artifacts/xai/unified_glioma.png",
+      "description": "Five-panel unified explanation \u2014 glioma",
+      "bytes": 656468
+    },
+    {
+      "path": "artifacts/xai/unified_meningioma.png",
+      "description": "Five-panel unified explanation \u2014 meningioma",
+      "bytes": 672423
+    },
+    {
+      "path": "artifacts/xai/unified_no_tumor.png",
+      "description": "Five-panel unified explanation \u2014 no_tumor",
+      "bytes": 632332
+    },
+    {
+      "path": "artifacts/xai/unified_pituitary.png",
+      "description": "Five-panel unified explanation \u2014 pituitary",
+      "bytes": 638822
+    }
+  ]
+}
